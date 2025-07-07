@@ -495,7 +495,7 @@ const App = () => {
                 <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-green-500 via-green-400 to-green-300" />
                 <div className="aspect-square rounded-xl overflow-hidden">
                   <img
-                    src={staticMapImagePath ? `http://localhost:8000/${staticMapImagePath}` : "https://images.unsplash.com/photo-1446329813274-7c9036bd9a1f?w=800&h=600&fit=crop&crop=center"}
+                    src={staticMapImagePath ? `${import.meta.env.VITE_BACKEND}/${staticMapImagePath}` : "https://images.unsplash.com/photo-1446329813274-7c9036bd9a1f?w=800&h=600&fit=crop&crop=center"}
                     alt="Satellite view"
                     className="w-full h-full object-cover brightness-90 contrast-110"
                   />
